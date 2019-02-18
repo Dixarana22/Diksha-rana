@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>cal</title></head>
+<body>
+<form method ="post" action="new1.php">
+<table border="0" cellspacing="5" cellpadding="10">
+<tr>
+<td><b>First number :</b></td>
+<td><input type="text" name="fno" id="frame"placeholder="Enter first number"value=<?php echo @ $_GET['a']?>></td></tr>
+<tr>
+<td><b>Second number :</b></td>
+<td><input type="text" name="sno" id="frame"placeholder="Enter second number"value=<?php echo @ $_GET['b']?>></td></tr>
+<tr>
+<td><b>result :</b></td>
+<td><input type="text" name="res" id="frame"readonly="readonly"value=<?php echo @ $_GET['r']?>> </td> </tr>
+<tr>
+<td><b>select operation:</b><br>
+<input type="radio" name="op" value="add"  <?php if(@$_GET['o']=="add") {  ?> checked="checked"  <?php } ?>  > <b>Add</b>  <br>
+<input type="radio" name="op" value="-" <?php if(@$_GET['o']=="-") {  ?> checked="checked"  <?php } ?> > <b>Sub</b> <br>
+<input type="radio" name="op" value="*" <?php if(@$_GET['o']=="*") {  ?> checked="checked"  <?php } ?>> <b>Mul</b><br>
+<input type="radio" name="op" value="/" <?php if(@$_GET['o']=="/") {  ?> checked="checked"  <?php } ?>> <b>Div</b> <br></td></tr>
+<tr>
+<td>
+<input type="submit">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
